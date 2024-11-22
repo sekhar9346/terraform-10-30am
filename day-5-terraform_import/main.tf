@@ -1,6 +1,13 @@
-
 resource "aws_instance" "myvm" {
- ami           = "unknown"#(we need to add from state file reference)
- instance_type = "unknown"#(we need to add from state file reference)
- #rest all attributes need to be added to match actual resource preseence in AWS 
+    ami = "ami-012967cc5a8c9f891"
+    instance_type = "t2.nano"
+    tags = {
+      Name = "ec2"
+    }
+  
+}
+
+resource "aws_s3_bucket" "dev" {
+    bucket = "importbucketdgscsgc"
+  
 }

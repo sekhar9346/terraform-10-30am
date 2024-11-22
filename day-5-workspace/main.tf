@@ -1,4 +1,4 @@
-resource "aws_s3" "name" {
-    bucket="test-hyd-dev-naresh"
-  
+resource "aws_s3_bucket" "name" {
+   bucket="test-hyd-dev-nareshsdgfds"
+
 }
